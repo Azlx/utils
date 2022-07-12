@@ -13,7 +13,7 @@ def run_cmd(cmd):
     """
     运行系统命令并获取结果
     :param cmd:
-    :return: 返回执行该命令后的标准输出和标准错误
+    :return: 返回码, (stdout, stderr)
     """
 
     cmd_popen = subprocess.Popen(cmd, shell=True, close_fds=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
